@@ -1,7 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This program creates a special matrix for which a cache of inverse is stored with it and is calculated for the first time 
+## and then after that the caluated value is stored somewhere and that is returned when called again
 
-## Write a short comment describing this function
+##The following function creates a special vector that contains a list of functions. 
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -20,8 +20,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 }
 
-
-## Write a short comment describing this function
+## The function below returns the inverse of the special matrix. 
+##It returns the value directly if the the inverse has been calculated for the matrix already.
 
 cacheSolve <- function(x, ...) {
   m <- x$getmean()
